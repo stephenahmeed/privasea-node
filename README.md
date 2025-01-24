@@ -14,7 +14,7 @@
 ## Installation
 - First install `Docker` in your system if it is not already there by using below command
 ```
-command -v docker >/dev/null 2>&1 || { echo "Docker not installed, installing..."; curl -fsSL https://get.docker.com -o get-docker.sh && sh get-docker.sh; }
+source <(wget -O - https://raw.githubusercontent.com/zunxbt/installation/main/docker.sh)
 ```
 ```
 sudo groupadd docker && sudo usermod -aG docker $(whoami) && newgrp docker
@@ -44,3 +44,5 @@ KEYSTORE_PASSWORD=ENTER_YOUR_KEYSTORE_PASSWORD && docker run -d --name privaneti
 ```
 
 - Now follow the guide from **Step 3 (Manage my Privanetix node)** from [this docs](https://www.privasea.ai/privanetix-node)
+
+Credit : ZunXBT
