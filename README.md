@@ -14,7 +14,7 @@
 ## Installation
 - First install `Docker` in your system if it is not already there by using below command
 ```
-source <(wget -O - https://raw.githubusercontent.com/zunxbt/installation/main/docker.sh)
+command -v docker >/dev/null 2>&1 || { echo "Docker not installed, installing..."; curl -fsSL https://get.docker.com -o get-docker.sh && sh get-docker.sh; }
 ```
 ```
 sudo groupadd docker && sudo usermod -aG docker $(whoami) && newgrp docker
